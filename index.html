@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>404 — Not Found</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap" role="main">
+      <section class="left">
+        <h1>404</h1>
+        <p class="lead">
+          The page you’re looking for isn’t here. It drifted off into the void —
+          Hold on, we’ll help you get back.
+        </p>
+        <a class="home" href="/">Return home --> </a>
+      </section>
+
+      <aside class="stage" aria-hidden="false">
+        <div class="orb" aria-hidden="true">
+          <img src="rsc/astro.png" alt="Astronauta floating" loading="eager" />
+        </div>
+      </aside>
+    </main>
+
+    <footer>© <span id="year"></span> — Page not found</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
